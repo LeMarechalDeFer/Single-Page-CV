@@ -1,0 +1,238 @@
+<!--
+<head> metadata (title, meta, link, style, script)
+<header> en tete
+
+
+<a> balise anchor, creer des liens cliquables
+<nav> indique section des liens
+<main> 
+<article> 
+<aside> en rapport avec la page mais pas le coeur du sujet like supplementary information, advertisements, or related articles. (connexe ou complementaire)
+
+<details> section d'info masquer (menu déroulant)
+<summary> titre du trigger
+
+<figure> illustration
+<figcaption> titre illustration
+
+<mark> surligné
+
+<time> mettre la date
+
+<progress> barre de progression
+
+html(head, body(header(nav, titre photos), main footer)) 
+
+attribute : tjr mettre double quote ""
+
+link : faire des liens avec ce doc html et des ressources externes
+style ??
+    
+-->
+
+
+<!-- 
+To Do:
+
+- rajouter une navbar
+- photo de romain
+
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+     <head>
+          <title>CV Romain Blanchot</title>
+
+
+          <!-- Métadonnées de base -->
+          <meta charset="UTF-8">
+          <meta name="author" content="Romain Blanchot">
+          <meta name="application-name" content="Romain Blanchot CV">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="description" content="This site is the first tentative of Romain Blanchot CV">
+          <meta name="keywords" content="CV, Romain Blanchot, Full Stack Developer, Junior Developer, Thailand, ESIEA, Computer Engineer, Freelance">
+
+          <!-- SEO -->
+          <link rel="canonical" href="https://romainblanchot.com">
+
+
+          <!-- Open Graph -->
+          <meta property="og:title" content="CV Romain Blanchot">
+          <meta property="og:description" content="Welcome! My name's Romain Blanchot. I am a junior Full Stack Developer and Computer Engineering student at ESIEA. A French developer currently in Thailand.">
+          <meta property="og:image" content="https://romainblanchot.com/image.jpg"> 
+          <!-- ajouter une image en 1200x630 -->
+          <meta property="og:url" content="https://romainblanchot.com">
+          <meta property="og:type" content="website">
+          <meta property="og:locale" content="en_US">
+
+          <!-- Twitter Card -->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:title" content="CV Romain Blanchot">
+          <meta name="twitter:description" content="Welcome! My name's Romain Blanchot. I am a junior Full Stack Developer and Computer Engineering student at ESIEA. A French developer currently in Thailand.">
+          <meta name="twitter:image" content="https://romainblanchot.com/image.jpg">
+
+
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <!-- ajouter favicon -->
+
+        <!-- ajout des key word -->
+
+
+         <!-- Performances -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="preload" href="/fonts/myfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <!-- <meta http-equiv="default style" content="" > lien vers le css -->
+          <!-- <meta http-equiv="content-security-policy" content="default-src 'self'; script-src 'self'"> -->
+        <!-- google analytics -->
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+        <!-- <link rel="preload" href="/fonts/myfont.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+        <!-- <meta name="referrer" content="no-referrer"> -->
+
+
+     </head>
+
+     <body>
+        <header>
+               <h1> Romain Blanchot</h1>
+               <h2> Full Stack developer & ESIEA Computer Engineering Student</h2>
+               
+               <address> 
+                    <a href="mailto:contact@romainblanchot.com">
+                         contact@romainblanchot.com
+                        
+                    </a> 
+                    <br>
+                    <a href="https://www.linkedin.com/in/romain-blanchot-449941284" target="_blank" rel="noopener noreferrer">
+                         LinkedIn
+                         <img src="/LinkedIn_icon.svg" alt="LinkedIn icon" width="20" height="20">
+                    </a>
+                    <br>
+                    <a href="https://https://github.com/LeMarechalDeFer" target="_blank" rel="noopener noreferrer">
+                         Github
+                         <img src="/github-mark.svg" alt="Github icon" width="20" height="20">
+                    </a>
+                    <br>
+                    <span>Paris, Bangkok, France & Thailand</span>
+                    <br>
+                    <span>Qui ose gagne ! Who dares wins ! </span>
+
+               </address>
+        </header>
+
+        <main>
+          <!-- Introduction personnelle -->
+          <section>
+              <p>
+                  I am Romain, a French developer. I discovered Linux and C three years ago, and since then, it's "le grand amour". It's my passion every day.
+              </p>
+              <p>
+                  Currently a Computer Engineering student in Paris, specializing in software development.
+              </p>
+          </section>
+      
+          <!-- Projets et réalisations -->
+          <section>
+              <h3>Projects</h3>
+              <ul>
+                <li>
+                    <strong>Hotel La Louisiane Website:</strong> <a href="https://hotellalouisiane.com" target="_blank" rel="noopener noreferrer">hotellalouisiane.com</a>
+                </li>
+                  <li>
+                      <strong>Data Center Provider:</strong> <a href="https://aegiskernel.com" target="_blank" rel="noopener noreferrer">aegiskernel.com</a>
+                  </li>
+                
+                  <li>
+                      <strong>Google Cloud Certification:</strong> Personal training and certification.
+                  </li>
+                  <li>
+                    <strong>Arbitrage Bot:</strong> Cryptocurrency arbitrage bot between DEX and CEX.
+                    </li>
+              </ul>
+          </section>
+      
+          <!-- Compétences -->
+          <section>
+              <h3>Skills</h3>
+              <ul>
+                  <li>Passionate about new technologies and a hard worker.</li>
+                  <li>Languages: French, English, Thai.</li>
+                  <li>Programming: C/C++, Java, TypeScript/HTML/CSS.</li>
+                  <li>Frameworks: React, Next.js, Boost.io.</li>
+                  <li>Databases: Oracle SQL, PostgreSQL.</li>
+                  <li>Tools: Docker, Linux, Git.</li>
+                  <li>Data Structures and Algorithms.</li>
+              </ul>
+          </section>
+      
+          <!-- Formation académique -->
+          <section>
+              <h3>Education</h3>
+              <p>
+                  <ul>
+                      <li>ESIEA - Computer Engineering School in Paris.</li>
+                      <li>Self-taught: roadmap.sh, personal side projects, and entrepreneurship initiatives.</li>
+                  </ul>
+              </p>
+          </section>
+      
+          <!-- Expériences professionnelles -->
+          <section>
+              <h3>Career History</h3>
+              <ul>
+                  <li>
+                      <strong>Hotel La Louisiane:</strong> (since 2023) Website development, camera installation, Wi-Fi setup, and maintenance.
+                  </li>
+                  <li>
+                      <strong>Kernel Panic System:</strong> Tech Pole Cyber association (2023-2024).
+                  </li>
+              </ul>
+          </section>
+      
+          <!-- Passions -->
+          <section>
+              <h3>Passions</h3>
+              <ul>
+                  <li>Informatics and software development.</li>
+                  <li>Sports: Weightlifting, hiking, mountaineering.</li>
+                  <li>Cryptocurrency: Node provider for Filecoin and others.</li>
+                  <li>Business and entrepreneurship.</li>
+              </ul>
+          </section>
+      
+          <!-- Contact -->
+          <section>
+              <h3>Contact Me</h3>
+              <p>
+                  Feel free to reach out via email or LinkedIn!
+              </p>
+          </section>
+      </main>
+      
+
+        <footer>
+          <section>
+               <p>All rights reserved <time datetime="2025"> 2025</time></p>
+               
+          </section>
+        </footer>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
