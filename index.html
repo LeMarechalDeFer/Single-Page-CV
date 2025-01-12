@@ -40,8 +40,8 @@ To Do:
 - rajouter une navbar (toc table of content) (ok)
 - ajouter des id a chaque section (ok)
 
-- mettre arialabel
-- faire le forme me contacter
+- mettre arialabel (ok)
+- faire le forme me contacter (ok)
 - voir si possible de faire menu déroulant
 
 - ajout du css
@@ -134,9 +134,8 @@ To Do:
                <p>🚀 Turning ideas into reality through code and innovation!</p>
 
                <address> 
-                    <a href="mailto:contact@romainblanchot.com">
+                    <a href="mailto:contact@romainblanchot.com" aria-label="Send an email to contact@romainblanchot.com">
                          contact@romainblanchot.com
-                        
                     </a> 
                     <br>
                     <a href="https://www.linkedin.com/in/romain-blanchot-449941284" target="_blank" rel="noopener noreferrer">
@@ -157,16 +156,17 @@ To Do:
                <img src="photoProfilRomain2.jpg" alt="Romain Blanchot photo" height="250" >
 
                <nav>
-               <ul>
-                  <li><a href="#about-me">About Me</a></li>
-                  <li><a href="#projects">My Projects</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#education">Education</a></li>
-                  <li><a href="#career-history">Career History</a></li>
-                  <li><a href="#passions">Passions</a></li>
-                  <li><a href="#contact">Contact</a></li>
-          </ul>
-     </nav>
+                    <ul>
+                        <li><a href="#about-me" aria-label="Go to About Me section">About Me</a></li>
+                        <li><a href="#projects" aria-label="Go to My Projects section">My Projects</a></li>
+                        <li><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
+                        <li><a href="#education" aria-label="Go to Education section">Education</a></li>
+                        <li><a href="#career-history" aria-label="Go to Career History section">Career History</a></li>
+                        <li><a href="#passions" aria-label="Go to Passions section">Passions</a></li>
+                        <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+                    </ul>
+                </nav>
+                
         </header>
 
         <main>
@@ -183,8 +183,8 @@ To Do:
           </section>
       
           <!-- Projets et réalisations -->
-          <section id="projects">
-              <h3>Projects</h3>
+          <section id="projects" aria-labelledby="projects-title">
+              <h3 id="projects-title">Projects</h3>
               <ul>
                 <li>
                     <strong>Hotel La Louisiane Website:</strong> <a href="https://hotellalouisiane.com" target="_blank" rel="noopener noreferrer">hotellalouisiane.com</a>
@@ -203,8 +203,8 @@ To Do:
           </section>
       
           <!-- Compétences -->
-          <section id="skills">
-              <h3>Skills</h3>
+          <section id="skills" aria-labelledby="skills-title">
+              <h3 id="skills-title">Skills</h3>
               <ul>
                   <li>Passionate about new technologies and a hard worker.</li>
                   <li><strong>Languages:</strong> French, English, Thai.</li>
@@ -217,8 +217,8 @@ To Do:
           </section>
       
           <!-- Formation académique -->
-          <section id="education">
-              <h3>Education</h3>
+          <section id="education" aria-labelledby="education-title">
+              <h3 id="education-title">Education</h3>
                   <ul>
                       <li>ESIEA - Computer Engineering School in Paris.</li>
                       <li>Self-taught: roadmap.sh, personal side projects, and entrepreneurship initiatives.</li>
@@ -226,8 +226,8 @@ To Do:
           </section>
       
           <!-- Expériences professionnelles -->
-          <section id="career-history">
-              <h3>Career History</h3>
+          <section id="career-history" aria-labelledby="career-history-title">
+              <h3 id="career-history-title">Career History</h3>
               <ul>
                   <li>
                       <strong>Hotel La Louisiane:</strong> (since 2023) Website development, camera installation, Wi-Fi setup, and maintenance.
@@ -239,8 +239,8 @@ To Do:
           </section>
       
           <!-- Passions -->
-          <section id="passions">
-              <h3>Passions</h3>
+          <section id="passions" aria-labelledby="passions-title">
+              <h3 id="passions-title">Passions</h3>
               <ul>
                   <li>Informatics and software development.</li>
                   <li>Sports: Weightlifting, hiking, mountaineering.</li>
@@ -250,13 +250,13 @@ To Do:
           </section>
       
           <!-- Contact -->
-          <section id="contact">
-              <h3>Contact Me</h3>
+          <section id="contact" aria-labelledby="contact-title">
+              <h3 id="contact-title">Contact Me</h3>
               <form action="mailto:contact@romainblanchot.com" method="post" enctype="text/plain">
                
                     <label>Your message</label>
                     <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here !"></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit" aria-label="Send your message">Send</button>
                </form>
               <p>
                   Feel free to reach out via email or LinkedIn!
@@ -266,7 +266,7 @@ To Do:
       
 
       <footer>
-          <section id="copyright">
+          <section id="copyright" >
                <p>All rights reserved</p>
               <p> ©copyright Romain Blanchot<time datetime="2025">2025</time></p>
               <p>
@@ -274,8 +274,8 @@ To Do:
                   <a href="/terms-of-service">Terms of Service</a>
               </p>
           </section>
-          <section id="social-media">
-              <p>Follow me:</p>
+          <section id="social-media" aria-labelledby="social-media-title">
+              <p id="social-media-title">Follow me:</p>
               <a href="https://linkedin.com/in/romain-blanchot-449941284" target="_blank" rel="noopener noreferrer">
                   <img src="/LinkedIn_icon.svg" alt="LinkedIn Icon" width="20" height="20"> LinkedIn
               </a>
