@@ -34,19 +34,28 @@ style ??
 <!-- 
 To Do:
 
-- rajouter une navbar (toc table of content)
-- photo de romain
-- arialabel
+
+
+- ajout d'une photo de profil romain (ok)
+- rajouter une navbar (toc table of content) (ok)
+- ajouter des id a chaque section (ok)
+
+- mettre arialabel
+- faire le forme me contacter
+- voir si possible de faire menu déroulant
+
+- ajout du css
+
+
 - dans chaque section mettre article pour chacun des projets et detailler
 - terminer le head
 - technologie à ajouter : nginx, nodejs, bash
 - competence à ajouter : reseaux, seo
 - faq
-- ajouter des id a chaque section
-- ajout d'une photo de profil
 
 
-- dans le future je prevois quelles techno : k8s, proxmox, hashcorps suite, rgpd
+
+- dans le future je prevois quelles techno : k8s, proxmox, hashicorps suite, rgpd
 - sections à ajouter : références,  témoignages, certifications
 
 -->
@@ -88,17 +97,25 @@ To Do:
 
 
 
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <!-- ajouter favicon -->
+          <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+          <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+          <link rel="shortcut icon" href="/favicon/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+          <meta name="apple-mobile-web-app-title" content="RomainDev" />
+          <link rel="manifest" href="/favicon/site.webmanifest" />
 
-        <!-- ajout des key word -->
+      
+     <!-- les robots -->
+
+     <!-- ajout des key word -->
 
 
          <!-- Performances -->
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link rel="preload" href="/fonts/myfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <!-- <meta http-equiv="default style" content="" > lien vers le css -->
+       
+          <!-- <meta http-equiv="default style" content="" > lien vers le css -->
           <!-- <meta http-equiv="content-security-policy" content="default-src 'self'; script-src 'self'"> -->
         <!-- google analytics -->
         <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
@@ -109,10 +126,11 @@ To Do:
      </head>
 
      <body>
-        <header>
+        <header id="top">
                <h1> Romain Blanchot</h1>
                <h2> Full Stack developer & ESIEA Computer Engineering Student</h2>
-               
+               <p>🚀 Turning ideas into reality through code and innovation!</p>
+
                <address> 
                     <a href="mailto:contact@romainblanchot.com">
                          contact@romainblanchot.com
@@ -134,21 +152,36 @@ To Do:
                     <span>Qui ose gagne ! Who dares wins ! </span>
 
                </address>
+               <img src="photoProfilRomain2.jpg" alt="Romain Blanchot photo" height="250" >
+
+               <nav>
+               <ul>
+                  <li><a href="#about-me">About Me</a></li>
+                  <li><a href="#projects">My Projects</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#career-history">Career History</a></li>
+                  <li><a href="#passions">Passions</a></li>
+                  <li><a href="#contact">Contact</a></li>
+          </ul>
+     </nav>
         </header>
 
         <main>
           <!-- Introduction personnelle -->
-          <section>
+          <section id="about-me">
               <p>
                   I am Romain, a French developer. I discovered Linux and C three years ago, and since then, it's "le grand amour". It's my passion every day.
               </p>
               <p>
                   Currently a Computer Engineering student in Paris, specializing in software development.
               </p>
+
+             
           </section>
       
           <!-- Projets et réalisations -->
-          <section>
+          <section id="projects">
               <h3>Projects</h3>
               <ul>
                 <li>
@@ -168,7 +201,7 @@ To Do:
           </section>
       
           <!-- Compétences -->
-          <section>
+          <section id="skills">
               <h3>Skills</h3>
               <ul>
                   <li>Passionate about new technologies and a hard worker.</li>
@@ -182,7 +215,7 @@ To Do:
           </section>
       
           <!-- Formation académique -->
-          <section>
+          <section id="education">
               <h3>Education</h3>
                   <ul>
                       <li>ESIEA - Computer Engineering School in Paris.</li>
@@ -191,7 +224,7 @@ To Do:
           </section>
       
           <!-- Expériences professionnelles -->
-          <section>
+          <section id="career-history">
               <h3>Career History</h3>
               <ul>
                   <li>
@@ -204,7 +237,7 @@ To Do:
           </section>
       
           <!-- Passions -->
-          <section>
+          <section id="passions">
               <h3>Passions</h3>
               <ul>
                   <li>Informatics and software development.</li>
@@ -215,7 +248,7 @@ To Do:
           </section>
       
           <!-- Contact -->
-          <section>
+          <section id="contact">
               <h3>Contact Me</h3>
               <p>
                   Feel free to reach out via email or LinkedIn!
@@ -225,14 +258,15 @@ To Do:
       
 
       <footer>
-          <section>
-              <p>All rights reserved <time datetime="2025">2025</time></p>
+          <section id="copyright">
+               <p>All rights reserved</p>
+              <p> ©copyright Romain Blanchot<time datetime="2025">2025</time></p>
               <p>
                   <a href="/privacy-policy">Privacy Policy</a> | 
                   <a href="/terms-of-service">Terms of Service</a>
               </p>
           </section>
-          <section>
+          <section id="social-media">
               <p>Follow me:</p>
               <a href="https://linkedin.com/in/romain-blanchot-449941284" target="_blank" rel="noopener noreferrer">
                   <img src="/LinkedIn_icon.svg" alt="LinkedIn Icon" width="20" height="20"> LinkedIn
@@ -246,7 +280,6 @@ To Do:
 
    </body>
 </html>
-
 
 
 

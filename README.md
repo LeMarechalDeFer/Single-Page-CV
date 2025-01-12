@@ -1,4 +1,13 @@
 # Single-Page-CV
+# Portfollio  Landing page
 
-https://roadmap.sh/projects/single-page-cv
 
+target: entreprise 
+- showcase my result
+- storytelling
+- facilement contacter - call to action cal.com
+- footer
+
+
+- avoir un compte twitter
+- avoir un pseudo
